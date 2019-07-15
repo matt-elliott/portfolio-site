@@ -20,6 +20,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-transform: none;
 }
+#main-content .container {
+  min-height: 90vh;
+}
 .text-center {
   text-align: center;
 }
