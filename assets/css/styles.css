@@ -35,7 +35,7 @@ body {
 .btn-primary {
   background-color: var(--blue);
   color: var(--pearl);
-  margin: 1rem 0;
+  margin: 1rem 0 5rem;
 }
 .btn-primary:hover {
   background-color: var(--pearl);
