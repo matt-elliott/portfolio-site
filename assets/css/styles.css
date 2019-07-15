@@ -48,3 +48,21 @@ body {
 .animated {
   transition: 350ms all ease-out;
 }
+.no-list {
+  list-style: none;
+}
+a, a:active, a:link {
+  color: var(--black);
+  text-decoration: none;
+}
+a, a:hover, a:focus {
+  color: var(--blue);
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+#breadcrumbs {
+  margin: 2em 0;
+}

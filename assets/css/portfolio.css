@@ -1,0 +1,35 @@
+#portfolio .project {
+  background-color: var(--pearl);
+  padding: 1em;
+}
+#portfolio .project .project-header {
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+#portfolio .project .project-header h4 {
+  margin: 0;
+}
+#portfolio .project .project-body {
+  min-height: 330px;
+}
+#portfolio .project .project-body .link {
+  line-height: 3em;
+}
+#portfolio .project .project-body .link a {
+  display: inline-block;
+  vertical-align: middle;
+}
+#portfolio .project .project-body .link:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5em;
+}
+#portfolio .project .project-body .link.github:before {
+  content: url('/assets/images/github.svg');
+}
+#portfolio .project .project-body .link.website:before {
+  content: url('/assets/images/computer.svg');
+}
