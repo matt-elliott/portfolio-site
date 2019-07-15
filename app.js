@@ -18,9 +18,10 @@ app.get('/portfolio', function(req,res) {
   res.render('portfolio');
 });
 
-app.get('/assets/*', function(req,res) {
-  res.send(res);
-})
+app.get('/contact', function(req,res) {
+  res.render('contact');
+});
+
 
 //start server
 app.listen(port, function() {
