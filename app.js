@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const vue = require('ejs');
 const port = 1111;
 
 //set express to look at static files from assets folder
