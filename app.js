@@ -11,7 +11,7 @@ app.set('views', './Views');
 app.set('view engine', 'ejs');
 //set up routes
 app.get('/', function(req,res) {
-  res.render('index');
+  res.render('./index');
 });
 
 app.get('/portfolio', function(req,res) {
