@@ -1,0 +1,19 @@
+#main-content #homepage #intro-title {
+  padding-top: 8em;
+}
+#main-content #homepage #intro-title h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+#main-content #homepage hr {
+  border-color: --var(pearl);
+  max-width: 50%
+}
+#main-content #homepage #intro-text {
+  padding: 1rem;
+}
+#main-content #homepage #intro-text p {
+  max-width: 80%;
+  margin: 0 auto;
+}
