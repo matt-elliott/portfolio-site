@@ -6,15 +6,39 @@
 }
 #site-header #logo {
   max-width: 80%;
-  float: left;
+  padding-left: 0;
 }
 #site-header #logo h1 {
   font-family: 'Roboto Mono', Courier, monospace;
   letter-spacing: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 #site-header #site-navigation {
-  display: none;
+  position: relative;
+  background-color: var(--tan);
+  min-height: 53px;
+}
+#site-header #site-navigation ul {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  text-align: right;
+}
+#site-header #site-navigation ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  border-bottom: 1px solid var(--dark-gray);
+  margin: 0 15px;
+}
+#site-header #site-navigation ul li a {
+  font-family: 'Roboto Mono', Courier, monospace;
+}
+#site-header #site-navigation ul li a:before {
+  position: absolute;
+  content: '>';
+  left: -15px;
+  color: var(--black);
 }
 #site-header #site-navigigation-toggle {
   max-width: 20%;
