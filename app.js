@@ -1,4 +1,3 @@
-(function() {
 const express = require('express');
 const app = express();
 const vue = require('ejs');
@@ -27,4 +26,3 @@ app.get('/contact', function(req,res) {
 app.listen(port, function() {
   console.log(`Listening on port ${port}`);
 });
-}());
