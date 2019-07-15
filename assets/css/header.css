@@ -19,9 +19,15 @@
 }
 #site-header #site-navigation ul {
   position: absolute;
-  right: 15px;
   bottom: 0;
+  left: 15px;
   text-align: right;
+}
+#site-header #site-navigation ul.social {
+  left: auto;
+  right: 5px;
+  text-transform: lowercase;
+  font-size: 0.8em;
 }
 #site-header #site-navigation ul li {
   position: relative;
@@ -33,7 +39,7 @@
 #site-header #site-navigation ul li a {
   font-family: 'Roboto Mono', Courier, monospace;
 }
-#site-header #site-navigation ul li a:before {
+#site-header #site-navigation ul:not(.social) li a:before {
   position: absolute;
   content: '>';
   left: -15px;
@@ -68,4 +74,24 @@
 #site-header #site-navigigation-toggle #navbar-toggle-icon.active:after {
     color: var(--pearl);
     content: '\2260';
+  }
+  @media screen and (max-width: 479px) {
+    #site-header #site-navigation ul {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #site-header #site-navigation ul {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
   }
