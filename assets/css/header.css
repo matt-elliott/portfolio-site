@@ -5,13 +5,12 @@
   border-bottom: 2px solid var(--tan);
 }
 #site-header #logo {
-  max-width: 80%;
   padding-left: 0;
 }
 #site-header #logo h1 {
   font-family: 'Roboto Mono', Courier, monospace;
   letter-spacing: 0.5rem;
-  text-align: left;
+  text-align: center;
 }
 #site-header #site-navigation {
   position: relative;
