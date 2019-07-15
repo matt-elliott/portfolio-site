@@ -32,24 +32,24 @@ body {
 .text-dark {
   color: var(--black);
 }
-.btn-primary {
+.default-btn {
   background-color: var(--blue);
   color: var(--pearl);
   margin: 1rem 0 5rem;
 }
-.btn-primary:hover {
+.default-btn:hover {
   background-color: var(--pearl);
   color:  var(--blue);
-}
-.no-link, .no-link:hover {
-  color: inherit;
-  text-decoration: none;
 }
 .animated {
   transition: 350ms all ease-out;
 }
 .no-list {
   list-style: none;
+}
+.no-link, .no-link:hover, .no-link:link, .no-link:active, .no-link:focus, .no-link:visited {
+  color: inherit;
+  text-decoration: none;
 }
 a, a:active, a:link {
   color: var(--black);
@@ -65,4 +65,7 @@ a:visited {
 }
 #breadcrumbs {
   margin: 2em 0;
+}
+ul {
+  padding-left: 0;
 }

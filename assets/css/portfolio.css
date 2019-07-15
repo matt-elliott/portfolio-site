@@ -1,11 +1,13 @@
-#portfolio .project {
+#portfolio {
+
+}
+#portfolio .project .container {
   background-color: var(--pearl);
-  padding: 1em;
 }
 #portfolio .project .project-header {
   border-bottom: 1px solid var(--black);
-  margin-bottom: 8px;
-  padding-bottom: 8px;
+  margin: 8px 0;
+  padding: 8px 0;
 }
 #portfolio .project .project-header h4 {
   margin: 0;

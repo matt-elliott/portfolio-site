@@ -2,12 +2,12 @@
   padding-top: 8em;
 }
 #main-content #homepage #intro-title h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   padding-bottom: 0.5em;
 }
 #main-content #homepage hr {
-  border-color: --var(pearl);
+  border-top: 1px solid var(--pearl);
   max-width: 50%
 }
 #main-content #homepage #intro-text {
