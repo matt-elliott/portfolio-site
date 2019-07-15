@@ -1,6 +1,7 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
-const port = 1111;
+const port = process.env.PORT;
 
 //set express to look at static files from assets folder
 app.use('/assets/', express.static('./assets/'));
