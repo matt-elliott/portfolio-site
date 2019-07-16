@@ -41,11 +41,19 @@
 #site-header #site-navigation ul li a {
   font-family: 'Roboto Mono', Courier, monospace;
 }
-#site-header #site-navigation ul:not(.social) li a:before {
+#site-header #site-navigation ul li a:hover {
+  text-decoration: none;
+  color: var(--blue);
+}
+#site-header #site-navigation #site-links li a:before {
+  display: none;
   position: absolute;
   content: '>';
   left: -15px;
   color: var(--black);
+}
+#site-header #site-navigation #site-links li.active a:before {
+  display: block;
 }
 #site-header .site-navigigation-toggle {
   position: absolute;
