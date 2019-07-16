@@ -19,40 +19,41 @@
   </head>
   <body>
     <header id="site-header" class="flip">
-      <button id="site-navigigation-toggle" class="btn flip-up-btn" data-flip-target="flip">
-        <span id="navbar-toggle-icon">Menu</span>
-      </button>
-
       <div class="container flip-front animated-slow">
         <div class="row">
           <div id="logo" class="col-12">
             <h1>meanMatt</h1>
           </div>
         </div>
+        <button class="btn flip-up-btn site-navigigation-toggle" data-flip-target="flip">
+          <span class="navbar-toggle-icon">Menu</span>
+        </button>
       </div>
       <div class="container flip-back animated-slow">
-        <div class="row">
-          <nav id="site-navigation" class="col-12">
-              <ul class="no-list">
-                <li>
-                  <a href="/">home</a>
-                </li>
-                <li>
-                  <a href="/portfolio/">portfolio</a>
-                </li>
-                <li>
-                  <a href="/contact/">contact</a>
-                </li>
-              </ul>
-              <ul class="no-list social">
-                <li class="github">
-                  <a href="https://github.com/matt-elliott" target="_blank">Github</a>
-                </li>
-                <li class="linkedIn">
-                  <a href="https://www.linkedin.com/in/meanmatt/" target="_blank">linkedIn</a>
-                </li>
-              </ul>
-          </nav>
-        </div>
+        <nav id="site-navigation" class="row">
+            <ul class="no-list col-6 offset-3 text-center">
+              <li>
+                <a href="/">home</a>
+              </li>
+              <li>
+                <a href="/portfolio/">portfolio</a>
+              </li>
+              <li>
+                <a href="/contact/">contact</a>
+              </li>
+            </ul>
+            <ul class="no-list col-3 social">
+              <li class="github">
+                <a href="https://github.com/matt-elliott" target="_blank">Github</a>
+              </li>
+              <li class="linkedIn">
+                <a href="https://www.linkedin.com/in/meanmatt/" target="_blank">linkedIn</a>
+              </li>
+            </ul>
+        </nav>
+      
+        <button class="btn flip-up-btn site-navigigation-toggle" data-flip-target="flip">
+          <span class="navbar-toggle-icon">Menu</span>
+        </button>
       </div>
     </header>
