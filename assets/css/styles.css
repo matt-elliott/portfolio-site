@@ -47,6 +47,10 @@ body {
 .animated {
   transition: 350ms all ease-out;
 }
+.animated-slow {
+  transition: 1s all;
+}
+
 .no-list {
   list-style: none;
 }

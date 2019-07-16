@@ -1,8 +1,36 @@
 #site-header {
   color: var(--tan);
+  min-height: 65px;
 }
-#site-header .container {
+#site-header .container:first-of-type {
   border-bottom: 2px solid var(--tan);
+}
+.flip {
+  position: relative;
+  perspective: 1000px;
+}
+.flip .flip-front,
+.flip .flip-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: bottom;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.flip .flip-front {
+  transform: rotateX(0deg);
+}
+.flip .flip-back {
+  transform: rotateX(-180deg);
+}
+.flip.flip-up .flip-front {
+  transform: rotateX(180deg);
+}
+.flip.flip-up .flip-back {
+  transform: rotateX(0deg);
 }
 #site-header #logo {
   padding-left: 0;

@@ -8,7 +8,6 @@
     <title>Matt Elliott | Full Stack Developer</title>
     
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/skeleton.css"> %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/header.css">
@@ -19,38 +18,40 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,900|Roboto+Mono:700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="site-header">
-      <div class="container">
-        <div class="row">
-          
-          <%# <button id="site-navigigation-toggle" class="btn">
-            <span id="navbar-toggle-icon">Menu</span>
-          </button> %>
+    <header id="site-header" class="flip">
+      <button id="site-navigigation-toggle" class="btn flip-up-btn" data-flip-target="flip">
+        <span id="navbar-toggle-icon">Menu</span>
+      </button>
 
-          <div id="logo" class="col-sm-12 col-md-6">
+      <div class="container flip-front animated-slow">
+        <div class="row">
+          <div id="logo" class="col-12">
             <h1>meanMatt</h1>
           </div>
-
-          <nav id="site-navigation" class="col-sm-12 col-md-6">
-            <ul class="no-list">
-              <li>
-                <a href="/">home</a>
-              </li>
-              <li>
-                <a href="/portfolio/">portfolio</a>
-              </li>
-              <li>
-                <a href="/contact/">contact</a>
-              </li>
-            </ul>
-            <ul class="no-list social">
-              <li class="github">
-                <a href="https://github.com/matt-elliott" target="_blank">Github</a>
-              </li>
-              <li class="linkedIn">
-                <a href="https://www.linkedin.com/in/meanmatt/" target="_blank">linkedIn</a>
-              </li>
-            </ul>
+        </div>
+      </div>
+      <div class="container flip-back animated-slow">
+        <div class="row">
+          <nav id="site-navigation" class="col-12">
+              <ul class="no-list">
+                <li>
+                  <a href="/">home</a>
+                </li>
+                <li>
+                  <a href="/portfolio/">portfolio</a>
+                </li>
+                <li>
+                  <a href="/contact/">contact</a>
+                </li>
+              </ul>
+              <ul class="no-list social">
+                <li class="github">
+                  <a href="https://github.com/matt-elliott" target="_blank">Github</a>
+                </li>
+                <li class="linkedIn">
+                  <a href="https://www.linkedin.com/in/meanmatt/" target="_blank">linkedIn</a>
+                </li>
+              </ul>
           </nav>
         </div>
       </div>
