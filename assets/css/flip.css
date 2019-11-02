@@ -1,6 +1,7 @@
 .flip {
   position: relative;
   perspective: 1000px;
+  transform: rotateX(45deg);
 }
 .flip .flip-front,
 .flip .flip-back {
