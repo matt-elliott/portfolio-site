@@ -7,12 +7,13 @@ const messageSlack = require('./utils/messageSlack');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 //set express to look at static files from assets folder
 app.use('/assets/', express.static('./assets/'));
 //set view as template engine
 app.set('views', './Views');
 app.set('view engine', 'ejs');
+
+//TODO move routes into routes folder
 //set up routes
 app.get('/', function(req,res) {
   res.render('index');
