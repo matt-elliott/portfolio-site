@@ -13,7 +13,7 @@
   margin: 0;
 }
 #portfolio .project .project-body {
-  min-height: 330px;
+  min-height: 25vh;
 }
 #portfolio .project .project-body .link {
   line-height: 3em;
@@ -34,4 +34,9 @@
 }
 #portfolio .project .project-body .link.website:before {
   content: url('/assets/images/computer.svg');
+}
+@media screen and (min-width:768px) {
+  #portfolio .project .project-body {
+    min-height: 50vh;
+  }
 }
