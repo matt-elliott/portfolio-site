@@ -1,12 +1,38 @@
-    <footer class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="text-tan text-center">&copy; 2019 meanMatt. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+<footer class="container">
+  <div class="row">
+    <div class="col-12">
+      <p class="text-tan text-center">&copy; 2019 meanMatt. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+  integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'></script>
+
+<script>
+  function slackIt(data) {
+    $.ajax({
+      type: 'POST',
+      url: '/api/contact',
+      data: {data},
+      success: data => {
+        console.log(data);
+      }
+    });
+  }
+
+  function submitHandler(event) {
+    event.preventDefault();
+
+    let data = $('#contact-form').serialize();
+
+    slackIt(data);
+  }
+
+  $('#contact-submit-btn').on('click', submitHandler);
+</script>
+</body>
+
 </html>
