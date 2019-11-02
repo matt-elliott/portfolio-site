@@ -1,13 +1,13 @@
 module.exports = (input) => {
   const Slack = require('slack-node');
   let slack = new Slack();
-
-  slack.setWebhook('https://hooks.slack.com/services/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');
+  
+  slack.setWebhook(process.env.webhook);
 
   //TODO: move and improve sanitizing into a factory
   let data = '*New Contact*\n' +
     input.replace(/%40/g, '@')
-      .replace(/%20/, ' ')
+      .replace(/%20/g, ' ')
       .split('&')
       .join('\n');
   
