@@ -17,8 +17,12 @@
       type: 'POST',
       url: '/api/contact',
       data: {data},
-      success: data => {
-        console.log(data);
+      success: () => {
+        $('#contact form').fadeOut().remove();
+        let h3 = $('<h3/>');
+        h3.text(`Thank you for reaching out to me. I'm very excited to talk with you and will respond as soon as I can.`);
+        h3.addClass('text-center');
+        $('#contact').append(h3);
       }
     });
   }
