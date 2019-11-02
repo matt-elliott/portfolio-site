@@ -8,18 +8,18 @@
     <section id="main-content">
       <div id="contact" class="container">
         <div class="row">
-          <form class="col-12" method="post">
+          <form class="col-12" id="contact-form">
             <label for="name">Name</label>
-            <input name="name" placeholder="First and Last Names">
+            <input name="name" type="text" placeholder="First and Last Names">
             <label for="phone">Phone Number</label>
-            <input name="phone" placeholder="(xxx) xxx-xxxx">
+            <input name="phone" type="tel" placeholder="(xxx) xxx-xxxx">
             <label for="email">Email</label>
-            <input name="email" placeholder="realboy@pinocchio.com">
+            <input name="email" type="email" placeholder="realboy@pinocchio.com">
             <label for="message">Message:</label>
             <textarea rows="4" col="50">
             </textarea>
             <div class="row">
-              <input type="submit" value="Submit" class="col-3 offset-3 btn default-btn">
+              <input type="submit" value="Submit" class="col-3 offset-3 btn default-btn" id="contact-submit-btn">
               <input type="reset" value="Clear" class="col-3 btn default-btn">
             </div>
           </form>
